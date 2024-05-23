@@ -17,7 +17,7 @@ const ExpenseList = ({
 }) => {
   const UID = localStorage.getItem("UID");
   const yourDatabaseURL =
-    "https://expenses-tracker-2f825-default-rtdb.firebaseio.com";
+    "https://login-94bb8-default-rtdb.firebaseio.com/";
 
   const ExpenseList = useSelector((state) => state.Expence.ExpenseItem);
   console.log(ExpenseList);

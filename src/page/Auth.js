@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Authentication from "../auth/Auth";
 import { useDispatch } from "react-redux";
-import { authActions } from "../store/AuthReduces";
+import { authActions } from "../store/AuthReducers";
 import { redirect, useNavigate } from "react-router-dom";
 
 const Auth = () => {
@@ -26,7 +26,6 @@ const Auth = () => {
   };
 
   async function SignUp(AuthObj) {
-    // event.preventDefault();
     console.log(AuthObj);
     let url;
     if (mode === "login") {

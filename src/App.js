@@ -11,7 +11,7 @@ import Root from "./components/Root";
 import Auth from "./page/Auth";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { authActions } from "./store/AuthReduces";
+import { authActions } from "./store/AuthReducers";
 
 function App() {
   const dispatch = useDispatch();

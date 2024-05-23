@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { authActions } from "../store/AuthReduces";
+import { authActions } from "../store/AuthReducers";
 
 const Headers = ({ toggleTheme }) => {
   const dispatch = useDispatch();
@@ -27,9 +27,9 @@ const Headers = ({ toggleTheme }) => {
         }
       );
       if (!response.ok) {
-        throw new Error("Bro you got one error");
+        throw new Error("error");
       }
-      //here data is present brother of response
+
       const data = await response.json();
       console.log(data);
     } catch (error) {

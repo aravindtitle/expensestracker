@@ -49,7 +49,7 @@ const Expense = () => {
 
       //this below code is run when you press on update button
     } else {
-      console.log("bro updated key function ran this ttime");
+      console.log("this is for updating expenses");
 
       try {
         const response = await fetch(
